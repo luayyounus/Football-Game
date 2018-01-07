@@ -9,13 +9,14 @@
 - submit a link to your PR in canvas
 
 ## Directions
-Continuing Building out your Student Enrollment Site with the following additions:
-1. In the "View All Students" page, each student links to their own details page
+1. Make sure you have activated your [Dev Essentials](https://www.visualstudio.com/dev-essentials/) Account. 
+2. Continuing Building out your Student Enrollment Site with the following additions:
+3. In the "View All Students" page, each student links to their own details page
 	- The details page shows all the information related to that student **with the ability to edit the information**. 
 	- The user should be able to save the changes once completed, and be redirected back to the "View All students" results.
-2. In the "View All Students" page, there should be a "delete" option to remove that student from the database
+4. In the "View All Students" page, there should be a "delete" option to remove that student from the database
 
-3. Deploy both your database and website to Azure. 
+5. Deploy both your database and website to Azure. 
 
 ## Stretch (up to 5pts)
 If You didn't do so in Lab 13, include the following:
