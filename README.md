@@ -10,7 +10,7 @@
 
 ## Directions
 1. Make sure you have activated your [Dev Essentials](https://www.visualstudio.com/dev-essentials/) Account. 
-2. Continuing Building out your Student Enrollment Site with the following additions:
+2. (Re)build out your Student Enrollment Site with the following additions:(Each lab is separate, practice the process...)
 3. In the "View All Students" page, each student links to their own details page
 	- The details page shows all the information related to that student **with the ability to edit the information**. 
 	- The user should be able to save the changes once completed, and be redirected back to the "View All students" results.
