@@ -16,7 +16,6 @@
 	- The user should be able to save the changes once completed, and be redirected back to the "View All students" results.
 4. In the "View All Students" page, there should be a "delete" option to remove that student from the database
 
-5. Deploy both your database and website to Azure. 
 
 ## Stretch (up to 5pts)
 If You didn't do so in Lab 13, include the following:
@@ -60,7 +59,7 @@ Your job is to
 2. show them what it looks like in action
 3. show them how they use it
 4. tell them any other relevant details
-5 **Include the link to your deployed application on Azure**
+
 <br />
 
 This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
