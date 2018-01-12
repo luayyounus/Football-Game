@@ -19,22 +19,21 @@ namespace FootballDeployment.Controllers
             _context = context;
         }
 
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(Player player)
+        public IActionResult Index(Team team)
         {
             //Add player to database
-            _context.Players.Add(player);
+            _context.Teams.Add(team);
             //Saving the player
             _context.SaveChanges();
 
             //Redirect to view team info
-            return RedirectToAction("TeamInfo", "Team");
+            return RedirectToAction("TeamInfo", "Team", new {team.Name});
         }
     }
 }
