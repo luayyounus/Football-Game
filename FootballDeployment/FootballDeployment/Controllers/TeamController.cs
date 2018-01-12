@@ -54,5 +54,22 @@ namespace FootballDeployment.Controllers
 
             return RedirectToAction("TeamInfo", new {p.Team});
         }
+
+        [HttpGet]
+        public IActionResult DeletePlayer(int id)
+        {
+            // return view of specified player to delete
+            return View(_context.Players.First(p => p.Id == id));
+        }
+
+        [HttpPost]
+        public IActionResult DeletePlayer(Player p)
+        {
+            // remove player from the database
+            _context.Remove(p);
+            _context.SaveChanges();
+
+            return RedirectToAction("TeamInfo", new { p.Team });
+        }
     }
 }
