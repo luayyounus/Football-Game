@@ -22,9 +22,16 @@ namespace FootballDeployment.Controllers
         public IActionResult TeamInfo(string teamName)
         {
             // get all players of the passed team from database
-            IEnumerable<Player> players = _context.Players.Where(p => p.Team == teamName);
+            List<Player> players = _context.Players.ToList();
 
             return View(players);
+        }
+
+        [HttpGet]
+        public IActionResult AddPlayer()
+        {
+            // return view of add player
+            return View();
         }
 
         [HttpPost]
@@ -35,7 +42,7 @@ namespace FootballDeployment.Controllers
             // save player
             _context.SaveChanges();
 
-            return RedirectToAction("TeamInfo", new{player.Team});
+            return RedirectToAction("TeamInfo");
         }
 
         [HttpGet]

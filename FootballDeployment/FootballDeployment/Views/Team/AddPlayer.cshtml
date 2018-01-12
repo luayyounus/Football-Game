@@ -1,6 +1,5 @@
 ﻿<div class="form">
-    <form asp-action="">
-
+    <form method="post">
         <label for="Name">Name</label>
         <input maxlength="20" name="Name" />
 
@@ -13,12 +12,12 @@
         <label for="Team">Team</label>
         <input maxlength="20" name="Team" />
 
-        <select>
-            <option value="" disabled="disabled" selected="selected">Please select a position</option>
-            <option value="Position">Forward</option>
-            <option value="Position">Striker</option>
-            <option value="Position">Goal Keeper</option>
-            <option value="Position">Defensive</option>
+        <select for="Position">
+            <option name="Position" value="" disabled="disabled" selected="selected">Please select a position</option>
+            <option name="Position" value="Position">Forward</option>
+            <option name="Position" value="Position">Striker</option>
+            <option name="Position" value="Position">Goal Keeper</option>
+            <option name="Position" value="Position">Defensive</option>
         </select>
 
         <button type="submit">Create</button>

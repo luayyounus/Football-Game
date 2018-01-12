@@ -1,3 +1,38 @@
-﻿<p>Team Info</p>
+﻿@using FootballDeployment.Models
 
-<p>Add Player</p>
+@if (Model.Count == 0)
+{
+    <p>No players found.</p>
+}
+else
+{
+    <h2>@Model[0].Team</h2>
+    <table class="players">
+        <thead>
+            <tr class="panel">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Number</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+
+        <tbody id="table-body">
+            @{
+                foreach (Player player in Model)
+                {
+                    <tr>
+                        <td>@player.Id</td>
+                        <td>@player.Name</td>
+                        <td>@player.Age</td>
+                        <td>@player.Number</td>
+                        <td>@player.Position</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+<td><a asp-action="AddPlayer" asp-controller="Team">Add Player</a></td>
