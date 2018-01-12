@@ -11,9 +11,10 @@ using System;
 namespace FootballDeployment.Migrations
 {
     [DbContext(typeof(FootballDbContext))]
-    partial class FootballDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180112070646_ChangedPlayerClubToTeam")]
+    partial class ChangedPlayerClubToTeam
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

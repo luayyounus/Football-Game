@@ -11,9 +11,10 @@ using System;
 namespace FootballDeployment.Migrations
 {
     [DbContext(typeof(FootballDbContext))]
-    partial class FootballDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180112070443_RemovedPlayersArrayFromTeam")]
+    partial class RemovedPlayersArrayFromTeam
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,13 +28,13 @@ namespace FootballDeployment.Migrations
 
                     b.Property<byte>("Age");
 
+                    b.Property<string>("Club");
+
                     b.Property<string>("Name");
 
                     b.Property<byte>("Number");
 
                     b.Property<string>("Position");
-
-                    b.Property<string>("Team");
 
                     b.HasKey("Id");
 
