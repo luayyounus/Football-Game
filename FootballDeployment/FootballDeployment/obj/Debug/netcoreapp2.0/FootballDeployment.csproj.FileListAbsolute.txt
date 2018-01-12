@@ -6,3 +6,6 @@ C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeplo
 C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Debug\netcoreapp2.0\FootballDeployment.csproj.CoreCompileInputs.cache
 C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Debug\netcoreapp2.0\FootballDeployment.AssemblyInfoInputs.cache
 C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Debug\netcoreapp2.0\FootballDeployment.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Debug\netcoreapp2.0\FootballDeployment.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Debug\netcoreapp2.0\FootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Debug\netcoreapp2.0\FootballDeployment.pdb
