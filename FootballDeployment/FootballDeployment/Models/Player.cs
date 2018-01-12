@@ -12,5 +12,6 @@ namespace FootballDeployment.Models
         public byte Age { get; set; }
         public byte Number { get; set; }
         public string Club { get; set; }
+        public string Position { get; set; }
     }
 }
