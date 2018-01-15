@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using FootballDeployment.Data;
 using FootballDeployment.Models;
+using FootballDeployment.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,15 +20,28 @@ namespace FootballDeployment.Controllers
 
         public IActionResult TeamInfo(string teamName)
         {
-            // get all players of the passed team from database
-            List<Player> players = _context.Players.ToList();
+            Team team = _context.Teams.FirstOrDefault(t => t.Name == teamName);
 
-            return View(players);
+            FootballViewModel footballViewModel = new FootballViewModel
+            {
+                Players = _context.Players.Where(p => p.Team == teamName).ToList(),
+                Team = team
+            };
+
+            return View(footballViewModel);
         }
 
         [HttpGet]
-        public IActionResult AddPlayer()
+        public IActionResult AllTeams()
         {
+            List<Team> allTeams = _context.Teams.ToList();
+            return View(allTeams);
+        }
+
+        [HttpGet]
+        public IActionResult AddPlayer(string team)
+        {
+            ViewBag.Team = team;
             // return view of add player
             return View();
         }
@@ -42,15 +54,12 @@ namespace FootballDeployment.Controllers
             // save player
             _context.SaveChanges();
 
-            return RedirectToAction("TeamInfo");
+            return RedirectToAction("TeamInfo", new { teamName = player.Team });
         }
 
+        // return view of update player with id
         [HttpGet]
-        public IActionResult UpdatePlayer(int id)
-        {
-            // return view of update player with id
-            return View(_context.Players.FirstOrDefault(p => p.Id == id));
-        }
+        public IActionResult UpdatePlayer(int id) => View(_context.Players.FirstOrDefault(p => p.Id == id));
 
         [HttpPost]
         public IActionResult UpdatePlayer(Player p)
@@ -59,15 +68,12 @@ namespace FootballDeployment.Controllers
             _context.Players.Update(p);
             _context.SaveChanges();
 
-            return RedirectToAction("TeamInfo", new {p.Team});
+            return RedirectToAction("TeamInfo", new { teamName = p.Team });
         }
 
+        // return view of specified player to delete
         [HttpGet]
-        public IActionResult DeletePlayer(int id)
-        {
-            // return view of specified player to delete
-            return View(_context.Players.First(p => p.Id == id));
-        }
+        public IActionResult DeletePlayer(int id) => View(_context.Players.First(p => p.Id == id));        
 
         [HttpPost]
         public IActionResult DeletePlayer(Player p)
@@ -76,7 +82,7 @@ namespace FootballDeployment.Controllers
             _context.Remove(p);
             _context.SaveChanges();
 
-            return RedirectToAction("TeamInfo", new { p.Team });
+            return RedirectToAction("TeamInfo", new { teamName = p.Team });
         }
     }
 }
