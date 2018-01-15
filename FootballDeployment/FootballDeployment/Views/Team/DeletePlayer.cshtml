@@ -1,6 +1,8 @@
 ﻿@model FootballDeployment.Models.Player
 
-<h2>Delete Player</h2>
+<link href="~/Style.css" rel="stylesheet" />
+
+<h2>Player Details</h2>
 
 <div>
     <hr />
@@ -32,8 +34,9 @@
     </dl>
 </div>
 
-<form asp-action="DeletePlayer">
+<form method="post">
     <input type="hidden" asp-for="Id" />
-    <input type="submit" value="Delete Plyer" /> |
-    <a asp-action="TeamInfo">Return to List</a>
+    <input type="hidden" asp-for="Team" />
+    <a asp-action="TeamInfo" asp-route-teamName="@Model.Team">Back to Team View</a>
+    <input type="submit" value="Delete Player" /> |
 </form>

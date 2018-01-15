@@ -1,4 +1,6 @@
-﻿<div class="form">
+﻿<link href="~/Style.css" rel="stylesheet" />
+
+<div class="form">
     <form method="post">
         <label for="Name">Name</label>
         <input maxlength="20" name="Name" />
@@ -10,16 +12,16 @@
         <input maxlength="20" name="Number" />
 
         <label for="Team">Team</label>
-        <input maxlength="20" name="Team" />
+        <input maxlength="20" name="Team" value="@ViewBag.Team" />
 
-        <select for="Position">
-            <option name="Position" value="" disabled="disabled" selected="selected">Please select a position</option>
-            <option name="Position" value="Position">Forward</option>
-            <option name="Position" value="Position">Striker</option>
-            <option name="Position" value="Position">Goal Keeper</option>
-            <option name="Position" value="Position">Defensive</option>
+        <select name="Position" width="10">
+            <option value="" disabled="disabled" selected="selected">Select a player position</option>
+            <option value="Forward">Forward</option>
+            <option value="Striker">Striker</option>
+            <option value="Goal Keeper">Goal Keeper</option>
+            <option value="Defensive">Defensive</option>
         </select>
 
-        <button type="submit">Create</button>
+        <button type="submit">Create Player</button>
     </form>
 </div>

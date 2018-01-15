@@ -1,27 +1,29 @@
 ﻿@model FootballDeployment.Models.Player
 
+<link href="~/Style.css" rel="stylesheet" />
+
 <h2>Update Player</h2>
 
 <div class="form">
     <form method="post">
-        <label for="Name">@Model.Name</label>
+        <label for="Name">Name</label>
         <input maxlength="20" name="Name" value="@Model.Name"/>
 
-        <label for="Age">@Model.Age</label>
-        <input maxlength="20" name="Age" value="@Model." />
+        <label for="Age">Age</label>
+        <input type="number" min="1" max="70" maxlength="2" name="Age" value="@Model.Age" />
 
-        <label for="Number">@Model.Number</label>
-        <input maxlength="20" name="Number" value="@Model.Number" />
+        <label for="Number">Number</label>
+        <input type="number" min="1" max="30" maxlength="2" name="Number" value="@Model.Number" />
 
-        <label for="Team">@Model.Team</label>
+        <label for="Team">Team</label>
         <input maxlength="20" name="Team" value="@Model.Team"/>
 
-        <select>
-            <option value="" disabled="disabled" selected="selected">Please select a position</option>
-            <option value="Position">Forward</option>
-            <option value="Position">Striker</option>
-            <option value="Position">Goal Keeper</option>
-            <option value="Position">Defensive</option>
+        <select name="Position" width="10" required>
+            <option value="" disabled="disabled" selected="selected">Select a player position</option>
+            <option value="Forward">Forward</option>
+            <option value="Striker">Striker</option>
+            <option value="Goal Keeper">Goal Keeper</option>
+            <option value="Defensive">Defensive</option>
         </select>
 
         <button type="submit">Save</button>
