@@ -1,0 +1,16 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\XUnitTestFootballDeployment.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\XUnitTestFootballDeployment.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\XUnitTestFootballDeployment.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\XUnitTestFootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\XUnitTestFootballDeployment.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\FootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\bin\Debug\netcoreapp2.0\FootballDeployment.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\XUnitTestFootballDeployment\obj\Debug\netcoreapp2.0\XUnitTestFootballDeployment.pdb
