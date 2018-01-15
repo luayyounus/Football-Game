@@ -27,13 +27,19 @@ namespace FootballDeployment.Controllers
         [HttpPost]
         public IActionResult Index(Team team)
         {
-            //Add player to database
-            _context.Teams.Add(team);
-            //Saving the player
-            _context.SaveChanges();
+            if (!ModelState.IsValid)
+                RedirectToAction("Index");
+
+            if (!(_context.Teams.Any(t => t.Name == team.Name)))
+            {
+                //Add player to database
+                _context.Teams.Add(team);
+                //Saving the player to database
+                _context.SaveChanges();
+            }
 
             //Redirect to view team info
-            return RedirectToAction("TeamInfo", "Team", new {team.Name});
+            return RedirectToAction("TeamInfo", "Team", new { teamName = team.Name});
         }
     }
 }
