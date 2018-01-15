@@ -9,10 +9,7 @@ namespace FootballDeployment.Data
 {
     public class FootballDbContext : DbContext
     {
-        public FootballDbContext(DbContextOptions<FootballDbContext> options) : base(options)
-        {
-            
-        }
+        public FootballDbContext(DbContextOptions<FootballDbContext> options) : base(options) { }
 
         public DbSet<Team> Teams { get; set; }
         public DbSet<Player> Players { get; set; }
