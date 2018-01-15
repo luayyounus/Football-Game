@@ -42,7 +42,6 @@ namespace FootballDeployment.Controllers
         public IActionResult AddPlayer(string team)
         {
             ViewBag.Team = team;
-            // return view of add player
             return View();
         }
 
