@@ -1,21 +1,29 @@
 ﻿@model FootballDeployment.ViewModels.FootballViewModel
-    
+
 @{
     ViewBag.Title = "Team Info";
     Layout = "_Layout";
 }
 
-<h1>Team: @Model.Team.Name</h1>
+<div class="jumbotron">
+    <h1 class="display-3">@Model.Team.Name</h1>
+</div>
+
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 
 @if (Model.Players.Count == 0)
 {
-    <p>No players found.</p>
+    <p class="lead">No players found.</p>
 }
 else
 {
-    <table class="players">
+    <table class="players table table-hover">
         <thead>
-            <tr class="panel">
+            <tr class="panel col">
                 <th>Name</th>
                 <th>Age</th>
                 <th>Number</th>
@@ -28,7 +36,9 @@ else
             @{
                 foreach (var player in Model.Players)
                 {
-                    <tr>
+                    int num = 0;
+                    string color = (num++ % 2 == 0) ? "table-light" : "table-success";
+                    <tr class="@color">
                         <td>@player.Name</td>
                         <td>@player.Age</td>
                         <td>@player.Number</td>
@@ -42,4 +52,6 @@ else
     </table>
 }
 
-<p><a asp-action="AddPlayer" asp-route-team="@Model.Team.Name">Add Player</a></p>
+<button type="button" id="btn-remove-view" class="btn btn-primary btn-lg btn-add-remove-player">
+    <a asp-action="AddPlayer" asp-route-team="@Model.Team.Name">Add Player</a>
+</button>

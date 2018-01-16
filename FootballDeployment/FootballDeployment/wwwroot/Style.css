@@ -20,6 +20,30 @@
     margin-top: -4px;
 }
 
+.btn-add-remove-player {
+    margin: 1% 80%;
+}
+
+    .btn-add-remove-player a {
+        color: whitesmoke;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+.btn-remove-view {
+    /*display: inli;*/
+}
+
+#btns-delete-player {
+    display: inline-block;
+}
+
+
+#div-add-player {
+    display: inline-flex;
+    margin: 0 41%;
+    /*text-align: center;*/
+}
 /*!
  * Bootswatch v4.0.0-beta.3
  * Homepage: https://bootswatch.com
