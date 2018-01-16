@@ -1,0 +1,13 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=FootballDeployment
+--content-root=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Home\Index.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Shared\_Layout.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Shared\_NavBar.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Team\AddPlayer.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Team\AllTeams.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Team\DeletePlayer.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Team\TeamInfo.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\Views\Team\UpdatePlayer.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\_ViewImports.cshtml

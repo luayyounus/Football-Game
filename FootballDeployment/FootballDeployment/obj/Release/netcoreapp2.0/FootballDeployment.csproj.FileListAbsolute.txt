@@ -1,0 +1,11 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Release\netcoreapp2.0\FootballDeployment.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Release\netcoreapp2.0\FootballDeployment.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Release\netcoreapp2.0\FootballDeployment.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Release\netcoreapp2.0\FootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\bin\Release\netcoreapp2.0\FootballDeployment.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab14-MVC-Deployment\FootballDeployment\FootballDeployment\obj\Release\netcoreapp2.0\FootballDeployment.pdb
