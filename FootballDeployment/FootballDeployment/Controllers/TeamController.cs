@@ -72,7 +72,7 @@ namespace FootballDeployment.Controllers
 
         // return view of specified player to delete
         [HttpGet]
-        public IActionResult DeletePlayer(int id) => View(_context.Players.First(p => p.Id == id));        
+        public IActionResult DeletePlayer(int id) => View(_context.Players.FirstOrDefault(p => p.Id == id));        
 
         [HttpPost]
         public IActionResult DeletePlayer(Player p)
