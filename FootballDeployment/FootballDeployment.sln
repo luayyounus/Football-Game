@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDeployment", "FootballDeployment\FootballDeployment.csproj", "{F15A4B71-76F8-42EF-AD32-6B47E016EE37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestFootballDeployment", "XUnitTestFootballDeployment\XUnitTestFootballDeployment.csproj", "{BEDA8D4E-17CA-4843-86DF-A63BC229B724}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestFootballDeployment", "XUnitTestFootballDeployment\XUnitTestFootballDeployment.csproj", "{BEDA8D4E-17CA-4843-86DF-A63BC229B724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
