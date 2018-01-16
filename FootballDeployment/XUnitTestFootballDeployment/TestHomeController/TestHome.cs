@@ -1,3 +1,4 @@
+using System;
 using FootballDeployment.Controllers;
 using FootballDeployment.Data;
 using FootballDeployment.Models;
@@ -13,7 +14,7 @@ namespace XUnitTestFootballDeployment
         public TestHome()
         {
             DbContextOptionsBuilder<FootballDbContext> builder = new DbContextOptionsBuilder<FootballDbContext>();
-            builder.UseInMemoryDatabase();
+            builder.UseInMemoryDatabase(Guid.NewGuid().ToString());
             DbContextOptions<FootballDbContext> options = builder.Options;
             _context = new FootballDbContext(options);
         }
