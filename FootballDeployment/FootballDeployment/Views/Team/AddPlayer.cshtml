@@ -1,15 +1,18 @@
-﻿<link href="~/Style.css" rel="stylesheet" />
+﻿@{
+    ViewBag.Title = "Add Player";
+    Layout = "_Layout";
+}
 
 <div class="form">
     <form method="post">
         <label for="Name">Name</label>
-        <input maxlength="20" name="Name" />
+        <input maxlength="20" name="Name" required/>
 
-        <label for="Age">Age</label>
-        <input maxlength="20" name="Age" />
+        <label for="Age" >Age</label>
+        <input maxlength="20" name="Age" size="3" required/>
 
         <label for="Number">Number</label>
-        <input maxlength="20" name="Number" />
+        <input maxlength="20" name="Number" size="3" required/>
 
         <label for="Team">Team</label>
         <input maxlength="20" name="Team" value="@ViewBag.Team" />

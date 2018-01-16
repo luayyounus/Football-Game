@@ -1,25 +1,24 @@
-﻿<link href="~/Style.css" rel="stylesheet" />
+﻿@{
+    ViewBag.Title = "Footies";
+    Layout = "_Layout";
+}
 
-<h1>Welcome to Footies!</h1>
+<h1 id="main-page-title">Welcome to Footies!</h1>
 
 <div>
-    <div class="form">
-        <p>Search or Create your Football Team</p>
+    <div class="form form-group">
+        <legend>Search or Create your Football Team</legend>
         <form method="post">
-            <label for="Name">Team Name</label>
-            <input maxlength="20" name="Name" required/>
-
+            <label for="Name" class="">Team Name</label>
+            <input maxlength="20" name="Name" required class="form-control" />
+            <br />
             <label for="Country">Team Country</label>
-            <input maxlength="20" name="Country" required/>
-
+            <input maxlength="20" name="Country" required class="form-control" />
+            <br />
             <label for="Field">Home Field</label>
-            <input maxlength="20" name="Field" required/>
-
-            <button type="submit">Go Team!</button>
+            <input maxlength="20" name="Field" required class="form-control" />
+            <br />
+            <button type="submit" class="btn btn-primary">Go Team!</button>
         </form>
-    </div>
-
-    <div>
-        <a asp-action="AllTeams" asp-controller="Team">Show Current Teams and Players</a>
     </div>
 </div>

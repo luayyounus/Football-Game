@@ -1,6 +1,9 @@
 ﻿@model FootballDeployment.ViewModels.FootballViewModel
-
-<link href="~/Style.css" rel="stylesheet" />
+    
+@{
+    ViewBag.Title = "Team Info";
+    Layout = "_Layout";
+}
 
 <h1>Team: @Model.Team.Name</h1>
 
