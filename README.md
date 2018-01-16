@@ -1,74 +1,45 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Lab 14 : Deployment
-=====================================
+# Footies ASP.NET Core Application
+**Author**: Luay Younus
 
-## To Submit this Assignment
-- fork this repository
-- write all of your code in a branch named `lab-#`; + `<your name>` **e.g.** `lab12-amanda`
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
+## Overview
+Web app that allows Football/Soccer lovers to Create teams, Add players and join existing teams.
+[Click to Open Web App Deployed on Azure](http://footies.azurewebsites.net)
 
-## Directions
-1. Make sure you have activated your [Dev Essentials](https://www.visualstudio.com/dev-essentials/) Account. 
-2. (Re)build out your Student Enrollment Site with the following additions:(Each lab is separate, practice the process...)
-3. In the "View All Students" page, each student links to their own details page
-	- The details page shows all the information related to that student **with the ability to edit the information**. 
-	- The user should be able to save the changes once completed, and be redirected back to the "View All students" results.
-4. In the "View All Students" page, there should be a "delete" option to remove that student from the database
+## Architecture
+ - C# ASP.NET Core application.
+ - MVC architectural design pattern.
+ - Entity Framework (Object-Relational Mapper)
+ - Azure (Deployment Service)
 
+## Requirements to run the Application
+- [Visual Studio 2017 Community with .NET Core 2.0 SDK](https://www.microsoft.com/net/core#windowscmd)
+- [GitBash / Terminal](https://git-scm.com/downloads) or [GitHub Extension for Visual Studio](https://visualstudio.github.com)
 
-## Stretch (up to 5pts)
-If You didn't do so in Lab 13, include the following:
-1. Include functionality on the "View All Students" page to search for specific students by Name, or class choice.
-2. Include functionality on the "View All Students" page to sort students by ASC or DESC order or First Name or Last Name. 
+## To open the project on local machine
+1. Clone the repository to your local machine.
+2. Cd into the application directory where the `AppName.sln` exist.
+3. Open the application using `Open/Start AppName.sln`.
+4. Change the database `constring` inside the `appsettings.json` file to:-
+```C#
+"DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Football;Trusted_Connection=True;MultipleActiveResultSets=true"
+```
+5. Save the file then Run the application by clicking on the Play button <img src="https://github.com/luayyounus/Lab02-Unit-Testing/blob/Lab02-Luay/WarCardGame/play-button.jpg" width="16">.
+6. The website will run on your default web browser routing to the main home page.
 
-**If you already implemented the above...
-1. Add an additional Database table for the Classes. Allow the option to edit the details of what each class consists of
-	- Class Name (this should match what the studetns are signing up for. You can make this field non-editable if you wish)
-	- Maximun number of students
-	- Class times
-	- etc....
-2. Include a page to view and edit the class details as well
-3. Can you show all the students that are in that class on the Class details page?
+# What to expect the first you run the app?
+- Navigation bar with Home Page to Create a Team and View All teams available.
+- When Team is created or picked, New player can be ADDED, UPDATED, DELETED.
 
-## Requirements
-Your MVC website should contain the following at minimum once completed:
-1. Proper Documentation (Comments, Readme etc...)
-2. *Two* Controllers (Home, and Enrollment) (Dont forget to use Dependency Injection on these Controllers)
-3. *One* Model for `Student.cs`
-4. View pages for each of the Controller Actions
-5. Data Folder with *One* DbContext file
-6. style.css file located in the `wwwroot` folder
-7. _ViewImports file to enable TagHelpers 
-8. `Startup.cs` should allow the following:
-	1. Routing Template 
-	2. Static Files, and MVC Middleware
-	3. Configured to use the DBContext service
-	4. Setup for Dependency Injection
-9. appsettings.json file for Database Connection string
-10. A Database.
-11. Tests. Research. Start Here: [Testing a Controller](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing). 
+# Main components of the Application
+ - DbContext for dependency injection used in controllers
+ - Two Main controllers
+ - Two models for Teams and Players
+ - ASP Tag Helpers are used for view routing
+ - Test Project with InMemoryDb context to test controllers.
 
-
-## ReadMe
-A README is a module consumer's first -- and maybe only -- look into your creation. The consumer wants a module to fulfill their need, so you must explain exactly what need your module fills, and how effectively it does so.
-<br />
-Your job is to
-
-1. tell them what it is (with context)
-2. show them what it looks like in action
-3. show them how they use it
-4. tell them any other relevant details
-
-<br />
-
-This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
-
-<br /> <br /> Refer to the sample-README in the class repo for an example. 
-- [Reference](https://github.com/noffle/art-of-readme)
-
-## Rubric
-- 7pts: Program meets all requirements described in Lab directions
-- 3pts: Code meets industry standards
-
-- **Readme.md required for submission. Missing readme document and tests will result in a best score of 2/10**
+# Dependencies and Packages
+- AspNetCore.All
+- EntityFrameworkCore.InMemory
+- EntityFrameworkCore.Tools
+- Xunit
+- Xunit.Runner
